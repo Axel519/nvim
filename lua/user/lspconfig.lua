@@ -78,6 +78,7 @@ function M.config()
     "tflint",
     "vimls",
     "yamlls",
+    "tsserver",
   }
 
   local default_diagnostic_config = {

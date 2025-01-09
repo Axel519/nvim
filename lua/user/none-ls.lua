@@ -22,7 +22,9 @@ function M.config()
       --   -- extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
       -- },
       -- formatting.eslint,
-      null_ls.builtins.diagnostics.flake8,
+      null_ls.builtins.diagnostics.flake8.with {
+        extra_args = { "--max-line-length", "120" },
+      },
       -- diagnostics.flake8,
       null_ls.builtins.completion.spell,
     },
